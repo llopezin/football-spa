@@ -1,0 +1,269 @@
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* styles */
+
+@import "reset.css";
+
+select {
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+}
+
+table tr {
+  border-bottom: 1px solid lightgray;
+}
+
+table tr:last-child {
+  border-bottom: none;
+}
+
+table th {
+  background-color: lightgray;
+  padding: 8px 4px;
+  font-size: 14px;
+}
+
+table td {
+  text-align: center;
+  padding: 8px 4px;
+  border-collapse: separate;
+  border-spacing: 50px 0;
+}
+
+table.standings th:nth-child(2),
+table.standings td:nth-child(2) {
+  text-align: left;
+}
+
+table.scorers th:nth-child(1),
+table.scorers td:nth-child(1),
+table.scorers th:nth-child(2),
+table.scorers td:nth-child(2) {
+  text-align: left;
+}
+
+
+table.team img {
+  width: 24px;
+}
+
+table.standings tr:hover,
+table.scorers tr:hover,
+table.matches tr:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.pageHeader {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  padding: 24px 12px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#app {
+  padding: 24px;
+}
+
+#navigation {
+  border-bottom: 3px solid black;
+  margin-bottom: 24px;
+  padding-left: 48px;
+}
+
+#navigation button {
+  font-family: "Roboto", sans-serif;
+  border: none;
+  padding: 0;
+  font-size: 24px;
+  font-weight: bold;
+  border: 2px solid black;
+  border-bottom: none;
+  padding: 4px 8px;
+  margin-right: 8px;
+}
+
+#navigation button.is-active {
+  background-color: lightgray;
+  pointer-events: none; 
+}
+
+#navigation button:hover {
+  background-color: darkgrey;
+  cursor: pointer;
+}
+
+#navigation button:focus {
+  outline: 0;
+}
+
+#main {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+}
+
+#main h2 {
+  font-size: 24px;
+  margin-bottom: 24px;
+  padding-bottom: 8px;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
+#content {
+  flex: 1;
+  padding-right: 8px;
+}
+
+#sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-left: 8px;
+}
+
+#scorers {
+  flex: 1;
+  padding-bottom: 8px;
+}
+
+#team {
+  flex: 1;
+  padding-top: 8px;
+}
+
+.spinner {
+  margin: 100px auto 0;
+  width: 70px;
+  text-align: center;
+  }
+
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #333;
+
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% { 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+
